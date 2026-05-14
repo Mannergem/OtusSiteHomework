@@ -7,42 +7,54 @@
 
 <div class="text-center bg-body-tertiary rounded-3">
     <img src="{% static 'images/logo.png' %}" class="bi mt-4 mb-3" width="100" height="100">
-    <h1 class="text-body-emphasis">Welcome to LavaCactus!</h1>
+    <h1 class="text-body-emphasis">Немного обо мне</h1>
     <p class="col-lg-8 mx-auto fs-5 text-muted">
-      Get started with this template based on Bootstrap 5. Go ahead, explore!
+      Я работаю системным аналитиком в Renue, но одновременно осваиваю технологии за рамками анализа
+      В частности, разраотку и devOps , ну и прохожу курс обучения TL
+      Мои текущие успехи в этой деятельности
     </p>
-    <div class="d-inline-flex gap-2 mb-5">
-        <a class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" href="https://github.com/quillcraftsman/lavacactus/" target="_blank">Project on GitHub</a>
-      <a class="btn btn-outline-secondary btn-lg px-4 rounded-pill" href="{% url '/contact.html' %}">Contact</a>
-    </div>
-  </div>
-
+</div>
 
 <div class="container">
-  <!-- Example row of columns -->
   <div class="row">
+    <div class="col-lg-12">
+      <div class="card mb-4">
+        <div class="card-body">
+          <h3>✅ Успешно освоил домашнее задание по GitHub</h3>
+          <p class="fs-5">Я научился:</p>
+          <ul>
+            <li>Создавать и настраивать Git-репозитории</li>
+            <li>Публиковать статичные сайты через GitHub</li>
+            <li>Работать с LavaCactus для генерации статики</li>
+            <li>Выполнять базовые операции git add, commit, push</li>
+          </ul>
+        </div>
+      </div>
 
-    <div class="col-lg-3">
-      <h2>Full featured template engine</h2>
-      <p>LavaCactus uses and extends Django's templating engine. If you've built sites using Django before, you'll feel right at home.</p>
+      <div class="card mb-4">
+        <div class="card-body">
+          <h3>🚀 Мой собственный проект</h3>
+          <p class="fs-5">У меня есть проект в приватном репозитории:</p>
+          <ul>
+            <li><strong>Сайт:</strong> <a href="http://heat-online.ru/" target="_blank">http://heat-online.ru/</a></li>
+            <li><strong>Технологии:</strong> Python-монолит с собственной БД</li>
+            <li><strong>Развернут на:</strong> VPS</li>
+            <li><strong>Планы:</strong> Применить GitHub Actions для CI/CD в ближайшее время</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body text-center">
+          <h3>🙏 Спасибо за внимание!</h3>
+          <p class="fs-4 text-muted">Полагаю что домашнее задание успешно выполнено</p>
+          <div class="d-inline-flex gap-2 mt-3">
+            <a class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" href="https://github.com/Mannergem/OtusSiteHomework" target="_blank">Мой проект на GitHub</a>
+            <a class="btn btn-outline-secondary btn-lg px-4 rounded-pill" href="http://heat-online.ru/" target="_blank">heat-online.ru</a>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="col-lg-3">
-      <h2>Pretty URLs</h2>
-      <p>LavaCactus can prettify URLs, so you can turn <code>/about.html</code> into a fancier <code>/about/</code> or just use <code>about.html</code>.</p>
-    </div>
-
-    <div class="col-lg-3">
-      <h2>Minification & Fingerprinting</h2>
-      <p>For maximum performance, LavaCactus can minify and fingerprint your static assets. As for your pages, LavaCactus will automatically compress them.</p>
-   </div>
-
-    <div class="col-lg-3">
-      <h2>And much more</h2>
-      <p>There's of course a lot more you can do with LavaCactus. Plus, LavaCactus's plugin framework lets you easily extend its functionality.</p>
-   </div>
-
-
   </div>
 </div>
 {% endblock %}
